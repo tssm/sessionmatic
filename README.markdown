@@ -9,3 +9,7 @@ sessions for you:
 You must create your desired sessions using the standard
 `:mksession` command. You must also set your preferred
 `sessionoptions`.
+
+# License
+
+[CC0](https://creativecommons.org/publicdomain/zero/1.0/)
