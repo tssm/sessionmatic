@@ -22,5 +22,5 @@ endfunction
 
 augroup SaveSessionAutomatically
 	autocmd!
-	autocmd VimLeave * call s:saveSession()
+	autocmd VimLeavePre * call s:saveSession()
 augroup END
