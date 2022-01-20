@@ -11,7 +11,7 @@ endfunction
 
 augroup LoadSessionAutomatically
   autocmd!
-  autocmd VimEnter * nested call s:loadSession()
+  autocmd DirChanged,VimEnter * nested call s:loadSession()
 augroup END
 
 function! s:saveSession()
