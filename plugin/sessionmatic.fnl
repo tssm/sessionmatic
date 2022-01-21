@@ -7,7 +7,7 @@
   (local session-file :Session.vim)
   (when
     (and
-      (= (f.argc) 0)
+      (= (f.argc -1) 0)
       (= (f.filereadable session-file) 1))
     (cmd (string.format "source %s" session-file))))
 (set Sessionmatic.load load)

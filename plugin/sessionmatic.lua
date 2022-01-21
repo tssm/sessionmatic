@@ -4,7 +4,7 @@ local f = vim.fn
 Sessionmatic = {}
 local function load()
   local session_file = "Session.vim"
-  if ((f.argc() == 0) and (f.filereadable(session_file) == 1)) then
+  if ((f.argc(-1) == 0) and (f.filereadable(session_file) == 1)) then
     return cmd(string.format("source %s", session_file))
   else
     return nil
