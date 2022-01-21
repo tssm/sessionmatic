@@ -18,7 +18,7 @@
     (and
       (not= this-session null)
       (= (f.filewritable this-session) 1))
-    (cmd :mksession!)))
+    (cmd (string.format "mksession! %s" this-session))))
 (set Sessionmatic.save save)
 
 (cmd "augroup Sessionmatic")

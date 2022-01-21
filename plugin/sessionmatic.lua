@@ -14,7 +14,7 @@ Sessionmatic.load = load
 local function save()
   local this_session = vim.v.this_session
   if ((this_session ~= null) and (f.filewritable(this_session) == 1)) then
-    return cmd("mksession!")
+    return cmd(string.format("mksession! %s", this_session))
   else
     return nil
   end
