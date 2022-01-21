@@ -8,7 +8,8 @@
   (when
     (and
       (= (f.argc -1) 0)
-      (= (f.filereadable session-file) 1))
+      (= (f.filereadable session-file) 1)
+      (= vim.v.this_session ""))
     (cmd (string.format "source %s" session-file))))
 (set Sessionmatic.load load)
 
