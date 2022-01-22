@@ -1,0 +1,3 @@
+Create sessions with the plain-old ~:mksession~ command and forget about
+updating them. Default `Session.vim` file will be used and ~sessionoptions~
+respected.
